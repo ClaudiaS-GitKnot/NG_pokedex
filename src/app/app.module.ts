@@ -18,6 +18,9 @@ import { PokemonListComponent } from './components/pokemon-list/pokemon-list.com
 import { PokemonDetailComponent } from './components/pokemon-detail/pokemon-detail.component';
 import { PokemonAttackComponent } from './components/pokemon-attack/pokemon-attack.component';
 import { NotificheComponent } from './components/notifiche/notifiche.component';
+import { RegisterComponent } from './components/register/register.component';
+import { LoginComponent } from './components/login/login.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -27,6 +30,8 @@ import { NotificheComponent } from './components/notifiche/notifiche.component';
     PokemonDetailComponent,
     PokemonAttackComponent,
     NotificheComponent,
+    RegisterComponent,
+    LoginComponent,
   ],
   imports: [
     BrowserModule,
@@ -40,6 +45,8 @@ import { NotificheComponent } from './components/notifiche/notifiche.component';
     MatInputModule,
     MatFormFieldModule,
     MatCardModule,
+    FormsModule,
+    MatInputModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
