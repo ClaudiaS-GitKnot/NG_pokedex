@@ -1,0 +1,8 @@
+<mat-nav-list>
+  <a mat-list-item *ngFor="let p of pokemons" [routerLink]="['/pokemon', p.id]">
+    <span matListItemTitle>{{ p.name }}</span>
+    <span>{{ p.types[0] }}</span>
+  </a>
+</mat-nav-list>
+<mat-error *ngIf="errorMessage">{{ errorMessage }}</mat-error>
+<!-- <pre>{{ pokemons | json }}</pre> -->
