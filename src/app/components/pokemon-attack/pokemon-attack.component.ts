@@ -1,5 +1,6 @@
 import { Component, Input } from '@angular/core';
 import { Attack } from 'src/app/models/pokemon.model';
+import { NotificheService } from 'src/app/services/notifiche.service';
 
 @Component({
   selector: 'app-pokemon-attack',
@@ -8,4 +9,10 @@ import { Attack } from 'src/app/models/pokemon.model';
 })
 export class PokemonAttackComponent {
   @Input() attack?: Attack;
+
+  constructor(private ns: NotificheService) {}
+
+  attacca() {
+    this.ns.nuovaNotifica(`${this.attack!.name}`);
+  }
 }
