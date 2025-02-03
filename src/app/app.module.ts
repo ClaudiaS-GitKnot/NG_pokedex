@@ -21,6 +21,7 @@ import { NotificheComponent } from './components/notifiche/notifiche.component';
 import { RegisterComponent } from './components/register/register.component';
 import { LoginComponent } from './components/login/login.component';
 import { FormsModule } from '@angular/forms';
+import { PokemonCatturatiComponent } from './components/pokemon-catturati/pokemon-catturati.component';
 
 @NgModule({
   declarations: [
@@ -32,6 +33,7 @@ import { FormsModule } from '@angular/forms';
     NotificheComponent,
     RegisterComponent,
     LoginComponent,
+    PokemonCatturatiComponent,
   ],
   imports: [
     BrowserModule,

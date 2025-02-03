@@ -16,7 +16,7 @@ export class AuthService {
       .pipe(
         // LocalStorage - Operatore tap (sbircio all'interno della pipe per accedere all'accessToken
         // Prende i dati (lo user)
-        tap((dati) => console.log('SERVIZIO AUTH: ', dati)),
+        // tap((dati) => console.log('SERVIZIO AUTH: ', dati)),
         tap((user) => this.setLoggedUser(user))
       );
   }
@@ -41,5 +41,9 @@ export class AuthService {
     }
 
     return null;
+  }
+
+  logout() {
+    localStorage.removeItem('user');
   }
 }
